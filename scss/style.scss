@@ -1,0 +1,23 @@
+$base-color: #5E81FE;
+
+header {
+    .collapse {
+        .navbar-nav {
+            .nav-link:hover {
+                color: $base-color;
+            }
+        }
+    }
+}
+
+.social__color {
+    transition: all .3s;
+}
+
+.social__color:hover {
+    fill: #6188FF;
+}
+
+.header__social {
+    flex-grow: 0.5;
+}
