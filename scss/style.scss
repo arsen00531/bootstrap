@@ -25,6 +25,14 @@ header {
 }
 
 .productivity {
+    position: relative;
+
+    .carousel-indicators {
+        bottom: 0.3em;
+    }
+}
+
+.productivity-container {
     background-image: url('../images/hero\ image.png');
     background-size: cover;
     background-repeat: no-repeat;
