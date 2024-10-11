@@ -1,13 +1,31 @@
 $base-color: #5E81FE;
 $base-color-opacity: #3D4F9F;
 $gray-color: #8D96BD;
+$gray-back: #D1D1E4;
+$light-gray: #F5F8FF;
 
-.social__color {
+.social__color path {
     transition: all .3s;
 }
 
-.social__color:hover {
+.social__color:hover path {
     fill: #6188FF;
+}
+
+h6 {
+    color: $base-color-opacity;
+}
+h4 {
+    color: #3D4F9F;
+}
+h3 {
+    color: $base-color-opacity;
+}
+h2 {
+    color: $base-color-opacity;
+}
+p {
+    color: $gray-color;
 }
 
 .header__social {
@@ -38,20 +56,179 @@ header {
     background-repeat: no-repeat;
     background-position: bottom;
     padding-top: 3em;
-    padding-bottom: 10em;
+    padding-bottom: 12em;
 
     .carousel-inner {
         .carousel-item {
-            h6 {
-                color: $base-color-opacity;
-            }
-            h3 {
-                color: $base-color-opacity;
-            }
             p {
-                color: $gray-color;
                 max-width: 60%;
                 margin: 0 auto;
+            }
+        }
+    }
+}
+
+.plan {
+    background-color: $light-gray;
+
+    .d-flex {
+        div {
+            flex: 0 0 50%;
+        }
+    }
+    .plan-image img {
+        width: 100%;
+    }
+}
+
+.start {
+    position: relative;
+    background-color: $light-gray;
+
+    .carousel-control-prev-icon {
+        background-image: url('../icons/arrowLeft.svg');
+    }
+
+    .carousel-control-next-icon {
+        background-image: url('../icons/arrowRight.svg');
+    }
+
+    .carousel-indicators {
+        button {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #D1D6E3;
+        }
+
+        button.active {
+            background-color: #5283FF;
+        }
+    }
+
+    .carousel {
+        padding-bottom: 6em;
+        .carousel-item {
+            background-color: #fff;
+            padding-top: 4em;
+            padding-bottom: 4em;
+            
+            div {
+                flex-basis: 50%;
+            }
+
+            .row {
+                height: 100%;
+            }
+
+            .item-images {
+                width: 100%;
+                height: 300px;
+
+                .firstly {
+                    background-image: url('../images/start1.png');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+
+                .secondary {
+                    display: flex;
+                    flex-direction: column;
+
+                    .start2 {
+                        background-image: url('../images/start2.png');
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+
+                    .start3 {
+                        background-image: url('../images/start3.png');
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .item-text {
+                button.gr {
+                    color: $gray-color;
+                }
+            }
+        }
+    }
+}
+
+.question {
+    padding-top: 150px;
+    padding-bottom: 150px;
+
+    .accordion {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
+
+.newsletter {
+    p {
+        max-width: 70%;
+    }
+
+    .butt {
+        flex-grow: 0.5;
+
+        input {
+            background-color: #EFEFF7;
+        }
+    
+        button {
+            flex-grow: 0.2;
+            border-radius: 10px;
+        }
+    }
+}
+
+.footer {
+    border-top: 1px solid #D8E3FE;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+@media (max-width: 992px) {
+    .newsletter {
+        .container {
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .plan {
+        .d-flex {
+            flex-direction: column;
+
+            .plan-text {
+                text-align: center;
+            }
+            .plan-image {
+                img {
+                    width: 90%;
+                }
+            }
+        }
+    }
+
+    .start {
+        .carousel-item {
+            .d-flex {
+                flex-direction: column;
+            }
+            
+            .row {
+                height: 300px !important;
             }
         }
     }
