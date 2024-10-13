@@ -68,6 +68,12 @@ header {
     }
 }
 
+.companies {
+    svg {
+        cursor: pointer;
+    }
+}
+
 .plan {
     background-color: $light-gray;
 
@@ -169,6 +175,12 @@ header {
     .accordion {
         max-width: 80%;
         margin: 0 auto;
+
+        .accordion-body {
+            button {
+                height: max-content;
+            }
+        }
     }
 }
 

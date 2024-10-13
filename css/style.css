@@ -54,6 +54,10 @@ header .collapse .navbar-nav .nav-link:hover {
   margin: 0 auto;
 }
 
+.companies svg {
+  cursor: pointer;
+}
+
 .plan {
   background-color: #F5F8FF;
 }
@@ -134,6 +138,10 @@ header .collapse .navbar-nav .nav-link:hover {
 .question .accordion {
   max-width: 80%;
   margin: 0 auto;
+}
+.question .accordion .accordion-body button {
+  height: -moz-max-content;
+  height: max-content;
 }
 
 .newsletter p {
